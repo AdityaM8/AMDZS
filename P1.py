@@ -1,0 +1,11 @@
+print("Hello world!")
+print("This is my first python program")
+print(76467+83750)
+print(45-67)
+print(23*12)
+print(22/7)
+print(20/4*5+8-10)
+print("10,20,30")
+print(10,20,sep='\n',end='are nums')
+print (5**50)
+
