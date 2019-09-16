@@ -1,0 +1,41 @@
+<html>
+<head>
+<script language="javascript">
+function check ()
+{
+var a=document.f1.fname.value
+var b=document.f1.age.value
+var c=document.f1.gender.value
+var d=document.f1.mobile.value
+var e=document.f1.email.value
+alert(a +" "+ b +" "+ c +" "+ d +" "+ e)
+document.write(a +" "+ b +" "+ c +" "+ d +" "+ e)
+}
+</script>
+</head>
+<body>
+<form name="f1">
+Name: <Input type="text" name="fname">
+<br><br>
+Enter your age:
+<Input type="text" name="age">
+<br><br>
+Select your gender:
+<br>
+<Input type="radio" name="gender" value="Male">Male<br>
+<Input type="radio" name="gender" value="Female">Female<br>
+<Input type="radio" name="gender" value="Other">Other<br>
+<br><br>
+Enter your mobile no:
+<Input type="text" name="mobile">
+<br><br>
+Enter your email:
+<Input type="email" name="email">
+<br><br>
+<Input type="button" value="SUBMIT" OnClick="check ()">
+</body>
+</html>
+
+
+
+

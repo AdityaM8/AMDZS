@@ -1,0 +1,45 @@
+<html>
+<HEAD>
+<script language="javascript">
+function add()
+{
+a=parseInt(document.form1.first.value)
+b=parseInt(document.form1.second.value)
+document.form1.result.value=a+b
+}
+function subtract()
+{
+a=parseInt(document.form1.first.value)
+b=parseInt(document.form1.second.value)
+document.form1.result.value=a-b
+}
+function multi()
+{
+a=parseInt(document.form1.first.value)
+b=parseInt(document.form1.second.value)
+document.form1.result.value=a*b
+}
+function divide()
+{
+a=parseInt(document.form1.first.value)
+b=parseInt(document.form1.second.value)
+document.form1.result.value=a/b
+}
+</script>
+</head>
+<body>
+<form method="post" name="form1">
+First number<input type="text" name="first">
+<br><br>
+Second number<input type="text" name="second">
+<br><br>
+<input type="button"  value="+" onclick="add()">
+<input type="button"  value="-" onclick="subtract()">
+<input type="button"  value="*" onclick="multi()">
+<input type="button"  value="/" onclick="divide()">
+<br><br>
+Result<input type="text" name="result" disabled>
+</form>
+</body>
+</html>
+ 

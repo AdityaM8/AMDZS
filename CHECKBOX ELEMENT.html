@@ -1,0 +1,42 @@
+<HTML>
+<HEAD>
+<TITLE>THE CHECKBOX CONTROL</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function ShowResults()
+{
+var Result
+Result= "YOU HAVE SELECTED:    "
+if(document.f1.chkHorror.checked)
+{     Result = Result  +  " horror  "
+}
+if(document.f1.chkAction.checked)
+{     Result = Result +  " action  "
+}
+if(document.f1.chkRomance.checked)
+{     Result = Result +  " Romance  "
+}
+if(document.f1.chkComedy.checked)
+{     Result = Result +  " Comedy  "
+}
+document.f1.txtResult.value = Result
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<H4>THE CHECKBOX CONTROL</H4>
+<P>WHEN A USER CLICKS ON A CHECKBOX, JAVASCRIPT CALLS A FUNCTION THAT TELLS WHICH SELECTIONS THE USER HAS CURRENTLY CHOSEN.<P>
+<P>
+<FORM NAME="f1">
+PLEASE SELECT THE MOVIE CATEGORIES THAT INTEREST YOU.<BR>
+<INPUT TYPE="CHECKBOX" NAME="chkHorror" onclick="ShowResults()">
+Horror<BR>
+<INPUT TYPE="CHECKBOX" NAME="chkAction" onclick="ShowResults()">
+Action<BR>
+<INPUT TYPE="CHECKBOX" NAME="chkRomance" onclick="ShowResults()">
+Romance<BR>
+<INPUT TYPE="CHECKBOX" NAME="chkComedy" onclick="ShowResults()">
+Comedy<BR>
+<P>
+<INPUT NAME="txtResult" SIZE="60">
+</BODY>
+</HTML>

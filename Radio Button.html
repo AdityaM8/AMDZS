@@ -1,0 +1,20 @@
+<HTML>
+<HEAD>
+<TITLE>THE RADIO BUTTON CONTROL</TITLE>
+<SCRIPT LANGUAGE="javascript">
+function setGender(Gender)
+{
+document.f1.txtResult.value=  "YOU HAVE SELECTED" + Gender + "."
+}
+</SCRIPT></HEAD>
+<BODY>
+<H4>THE RADIO BUTTON CONTROL</H4>
+<P>CLICK ON A RADIO BUTTON, JAVASCRIPT CALLS A FUNCTION THAT TELLS YOU WHICH BUTTON YOU HAVE SELECTED.</P>
+<P>
+<FORM NAME="f1">
+<INPUT TYPE="RADIO" NAME="Rad1" onclick="setGender('MALE')">Male<BR>
+<INPUT TYPE="RADIO" NAME="Rad1" onclick="setGender('FEMALE')">Female<BR>
+<P>
+<INPUT TYPE="text" NAME="txtResult" SIZE="50" >
+</BODY>
+</HTML>
