@@ -1,0 +1,24 @@
+x=["abc",1,2,8.5,True]
+print(x)
+x[0]="xyz"
+print(x)
+y=len(x)
+print(y)
+i=0
+while(i<y):
+    print(x[i])
+    i=i+1
+
+print(x[1])    
+print(x[2:5])
+print(x[-4:-1])
+x.append("newitem")
+print(x)
+x.insert(1,"Hello")
+print(x)
+x.remove(8.5)
+print(x)
+x.pop(0)
+print(x)
+x.clear()
+print(x)
