@@ -10,7 +10,7 @@ scanf("%d",&b);
 printf("enter any number");
 scanf("%d",&c);
 a>b && a>c?printf("the largest is %d",a):printf("a is not largest");
-b>a && b>c?printf("the largest is %d",b):printf("b is not largest");
-c>a && c>b?printf("the largest is %d",c):printf("c is not largest");
+b>a && b>c?printf("\n the largest is %d",b):printf("\n b is not largest");
+c>a && c>b?printf("\n the largest is %d",c):printf("\n c is not largest");
 getch();
 }
